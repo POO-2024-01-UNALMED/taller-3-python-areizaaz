@@ -24,7 +24,7 @@ class TV:
     def getMarca(self):
         return self._marca
     def getCanal(self):
-        return self._marca
+        return self._canal
     def getPrecio(self):
         return self._precio
     def getVolumen(self):
