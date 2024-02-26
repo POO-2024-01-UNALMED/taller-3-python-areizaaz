@@ -19,7 +19,7 @@ class Control:
 
     def enlazar(self, tv):
         self._tv = tv
-        tv.setControl = self
+        tv.setControl(self)
 
     def setCanal(self, canal):
         if(canal >= 1 and canal <= 120):
