@@ -1,26 +1,24 @@
-from tv import TV
-
 class Control:
 
-    def __init__(tv) -> None:
-         TV._tv = tv
+    def __init__(self,tv) -> None:
+         self._tv = tv
 
     def turnOn(self):
-        TV.turnOn()
+        self._tv.turnOn()
     def turnOff(self):
-        TV.turnOff()
+        self._tv.turnOff()
     def canalUp(self):
-        TV.canalUp()
+        self._tv.canalUp()
     def canalDown(self):
-        TV.canalDown()
+        self._tv.canalDown()
     def volumenUp(self):
-        TV.volumenUp()
+        self._tv.volumenUp()
     def volumenDown(self):
-        TV.volumenDown()
+        self._tv.volumenDown()
 
     def enlazar(self,tv):
         self._tv = tv
-        TV._control = self.tv
+        self._tv._control = self.tv
 
     def setCanal(self, canal):
         if(canal >= 1 and canal <= 120):
