@@ -17,8 +17,9 @@ class Control:
     def volumenDown(self):
         self._tv.volumenDown()
 
-    #def enlazar():
-        #self._tv._control = self
+    def enlazar(self, tv):
+        self._tv = tv
+        tv.setControl = self
 
     def setCanal(self, canal):
         if(canal >= 1 and canal <= 120):
